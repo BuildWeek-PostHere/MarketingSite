@@ -1,0 +1,48 @@
+nav{
+  background-color: @orange;  
+    .navStyle{
+        width: 800px;
+        margin: auto;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+
+        @media @tablet{
+            width: 100%;
+        }//.navStyle media tablet end
+        @media @phone{
+            flex-wrap: wrap;
+        }//.navStyle media phone end
+
+        .logo{
+            display: flex;
+            justify-content: center;
+            width: 50%;
+            @media @phone{
+                width: 100%;
+            }//.logo media phone end
+            h1{
+               font-size: 3rem;
+            }//h1 end
+        }
+        .links{
+            width: 40%;   
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            @media @phone{
+                width: 100%;
+                padding-top: 2%;
+            }//.links media phone end
+      
+            a{
+                font-size: 2rem;
+                text-decoration: none;
+                color: black;
+                &:hover {
+                    color: @purple;
+                }// hover end
+            }//a ends
+        } // .links ends
+    }//.navStyle ends
+}//nav ends
