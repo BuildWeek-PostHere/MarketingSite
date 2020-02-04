@@ -221,7 +221,7 @@ nav .navStyle .logo h1 {
   font-size: 3rem;
 }
 nav .navStyle .links {
-  width: 40%;
+  width: 30%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -300,9 +300,15 @@ nav .navStyle .links a:hover {
 }
 .homeHead .pitchDownload .buttons btn {
   padding: 3% 5%;
+  border: black 1px solid;
   font-size: 2.3rem;
   text-align: center;
+  background-color: #FF7127;
 }
 .homeHead .pitchDownload .buttons btn:hover {
-  color: #AAAAFF;
+  background-color: #AAAAFF;
+}
+.homeHead .pitchDownload .buttons btn a {
+  text-decoration: none;
+  color: black;
 }

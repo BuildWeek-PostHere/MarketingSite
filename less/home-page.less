@@ -13,8 +13,8 @@
             width: 100%;
             height: 20vh;
             border-radius: 0;
-        }
-    }
+        }//tablet media query ending
+    }//.phoneImg ending
     .pitchDownload{
         width: 50%;
         display: flex;
@@ -23,23 +23,32 @@
         h1,p{
             padding: 3% 0;
             text-align: center;
-        }
+        }//h1 p  ending
         @media @tablet{
             width: 100%;
-        }
+        }//tablet media queury ending
         .buttons{
             display: flex;
             justify-content: space-evenly;
             margin: 5% 0;
             btn{
                 padding: 3% 5%;
-                // border: black 2px solid;
+                border: black 1px solid;
                 font-size: 2.3rem;
                 text-align: center;
+                background-color: @orange;
                 &:hover{
-                        color: @purple;
-                }
-            }
-        }
-    }
-}
+                    background-color: @purple;
+                }//hover btn ending
+                a{
+                    text-decoration: none;
+                    color: black;
+                
+                }//a btn ending 
+                
+               
+                
+            }//btn ending
+        }//.buttons ending
+    }//.pitchDownload ending
+}//homeHead ending
