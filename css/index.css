@@ -12,6 +12,13 @@
   font-display: swap;
   src: local('Overpass Mono Regular'), local('OverpassMono-Regular'), url(https://fonts.gstatic.com/s/overpassmono/v5/_Xmq-H86tzKDdAPa-KPQZ-AC1i-0sw.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Noto Serif'), local('NotoSerif'), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Iaw1J5X9T9RW6j9bNfFcWbQ.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -149,6 +156,7 @@ html {
 html,
 body {
   font-family: 'Overpass Mono', monospace;
+  height: 100%;
 }
 h1,
 h2,
@@ -178,9 +186,10 @@ img {
   height: auto;
 }
 .container {
+  min-height: 100%;
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto ;
 }
 @media (max-width:800px) {
   .container {
@@ -241,11 +250,13 @@ nav .navStyle .links a:hover {
   color: #AAAAFF;
 }
 .footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 800px;
   margin: auto;
+  padding-top: 3%;
   text-align: center;
+  height: 50px;
 }
 @media (max-width:800px) {
   .footer {
@@ -311,4 +322,36 @@ nav .navStyle .links a:hover {
 .homeHead .pitchDownload .buttons btn a {
   text-decoration: none;
   color: black;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width:500px) {
+  .row {
+    flex-direction: column;
+  }
+}
+.row .person {
+  border: 1px solid #dfe2e5;
+  border-radius: 5px;
+  margin-top: 88px;
+  padding: 22px ;
+  text-align: center;
+}
+.row .person li {
+  font-size: 1.4rem;
+  padding: 2% 0;
+}
+.row .person a {
+  font-family: 'Noto Serif', serif;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+}
+.row .person img {
+  border-radius: 50%;
+  height: 130px;
+  margin: -66px 0 22px 0;
+  vertical-align: top;
 }
