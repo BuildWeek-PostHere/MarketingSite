@@ -323,6 +323,14 @@ nav .navStyle .links a:hover {
   text-decoration: none;
   color: black;
 }
+.team {
+  display: flex;
+  justify-content: center;
+}
+.team h1 {
+  text-align: center;
+  padding: 4% 0;
+}
 .row {
   display: flex;
   justify-content: space-around;
