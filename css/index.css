@@ -323,6 +323,11 @@ nav .navStyle .links a:hover {
   text-decoration: none;
   color: black;
 }
+@media (max-width:800px) {
+  .reverse {
+    flex-wrap: wrap;
+  }
+}
 .team {
   display: flex;
   justify-content: center;
