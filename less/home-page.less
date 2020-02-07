@@ -1,12 +1,11 @@
 .homeHead{
-    display: flex;
+    .flex(space-around);
     flex-wrap: wrap-reverse;
-    justify-content: space-around;
     margin-top: 10%;
     
     .phoneImg{
         width: 30%;
-        display: flex;
+        .flex(center);
         object-fit: cover;
         border-radius: 8px;
         @media @tablet{
@@ -18,9 +17,8 @@
 
     .pitchDownload{
         width: 50%;
-        display: flex;
+        .flex(center);
         flex-direction: column;
-        justify-content: center;
         h1,p{
             padding: 3% 0;
             text-align: center;
@@ -29,15 +27,12 @@
             width: 100%;
         }//tablet media queury ending
         .buttons{
-            display: flex;
-            justify-content: space-evenly;
+            .flex(space-evenly);
             margin: 5% 0;
+
+
             btn{
-                padding: 3% 5%;
-                border: black 1px solid;
-                font-size: 2.3rem;
-                text-align: center;
-                background-color: @orange;
+                .btnM(2.3rem,@orange);
                 &:hover{
                     background-color: @purple;
                 }//hover btn ending

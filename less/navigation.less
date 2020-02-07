@@ -4,8 +4,7 @@ nav{
         width: 800px;
         margin: auto;
         padding: 10px 0;
-        display: flex;
-        justify-content: space-between;
+        .flex(space-between);
 
         @media @tablet{
             width: 100%;
@@ -15,8 +14,7 @@ nav{
         }//.navStyle media phone end
 
         .logo{
-            display: flex;
-            justify-content: center;
+            .flex(center);
             width: 50%;
             @media @phone{
                 width: 100%;
@@ -27,8 +25,7 @@ nav{
         }
         .links{
             width: 30%;   
-            display:flex;
-            justify-content: space-around;
+            .flex(space-around);
             align-items: center;
             @media @phone{
                 width: 100%;
